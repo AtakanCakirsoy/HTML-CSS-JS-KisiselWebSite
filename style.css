@@ -1,0 +1,456 @@
+  /* Responsive yapı için alınan kaynak: https://www.youtube.com/watch?v=eOG90Q8EfRo*/
+  
+  body {
+      background-color: #191919;
+      color: #000305;
+      font-size: 87.5%;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+      text-align: left;
+  }
+  /* Responsive yapı için alınan kaynak: https://www.youtube.com/watch?v=eOG90Q8EfRo*/
+  
+  .body {
+      margin: 0 auto;
+      width: 70%;
+      clear: both;
+  }
+  /* Responsive yapı için alınan kaynak: https://www.youtube.com/watch?v=eOG90Q8EfRo*/
+  
+  .mainHeader img {
+      width: 30%;
+      height: auto;
+      margin: 2% 0;
+  }
+  /*Menü ile ilgili css*/
+  /*Menü kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
+  
+  .nav {
+      overflow: hidden;
+      background-color: #ef0b2e;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+  }
+  /*Menü kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
+  
+  .nav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+  }
+  /*Menü kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
+  
+  .nav .icon {
+      display: none;
+  }
+  /*Menü kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
+  
+  .dropdown-menu {
+      float: left;
+      overflow: hidden;
+  }
+  /*Menü kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
+  
+  .dropdown-menu .dropdownbutton {
+      font-size: 17px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+  }
+  /*Menü kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
+  
+  .dropdown-links {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+  }
+  /*Menü kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
+  
+  .dropdown-links a {
+      float: none;
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+  }
+  /*Menü kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
+  
+  .nav a:hover,
+  .dropdown-menu:hover .dropdownbutton {
+      background-color: #666;
+      color: white;
+  }
+  /*Menü kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
+  
+  .dropdown-links a:hover {
+      background-color: #666;
+      color: white;
+  }
+  /*Menü kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
+  
+  .dropdown-menu:hover .dropdown-links {
+      display: block;
+  }
+  /*Ana yapı ile ilgili css*/
+  /* Responsive yapı için alınan kaynak: https://www.youtube.com/watch?v=eOG90Q8EfRo*/
+  
+  .mainContent {
+      line-height: 25px;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+  }
+  /* Responsive yapı için alınan kaynak: https://www.youtube.com/watch?v=eOG90Q8EfRo*/
+  
+  .content {
+      width: 70%;
+      float: left;
+  }
+  /* Responsive yapı için alınan kaynak: https://www.youtube.com/watch?v=eOG90Q8EfRo*/
+  
+  .topcontent {
+      background-color: #FFF;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      padding: 3% 5%;
+      margin-top: 2%;
+  }
+  /* Responsive yapı için alınan kaynak: https://www.youtube.com/watch?v=eOG90Q8EfRo*/
+  
+  .bottomcontent {
+      background-color: #FFF;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      padding: 3% 5%;
+      margin-top: 2%;
+  }
+  /* Responsive yapı için alınan kaynak: https://www.youtube.com/watch?v=eOG90Q8EfRo*/
+  
+  .post-info {
+      font-style: italic;
+      color: #999;
+      font-size: 85%;
+  }
+  /* Responsive yapı için alınan kaynak: https://www.youtube.com/watch?v=eOG90Q8EfRo*/
+  
+  .top-sidebar {
+      width: 21%;
+      float: left;
+      background-color: #FFF;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      margin: 2% 0 2% 3%;
+      padding: 2% 3%;
+      height: 170px;
+      overflow: auto;
+  }
+  /* Responsive yapı için alınan kaynak: https://www.youtube.com/watch?v=eOG90Q8EfRo*/
+  
+  .middle-sidebar {
+      width: 21%;
+      float: left;
+      background-color: #FFF;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      margin-left: 3%;
+      margin-bottom: 2%;
+      padding: 2% 3%;
+      height: 170px;
+      overflow: auto;
+  }
+  /* Responsive yapı için alınan kaynak: https://www.youtube.com/watch?v=eOG90Q8EfRo*/
+  
+  .bottom-sidebar {
+      width: 21%;
+      float: right;
+      background-color: #FFF;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      margin-left: 3%;
+      margin-bottom: 2%;
+      padding: 2% 3%;
+  }
+  /* Responsive yapı için alınan kaynak: https://www.youtube.com/watch?v=eOG90Q8EfRo*/
+  
+  .mainFooter {
+      width: 100%;
+      height: 80px;
+      float: left;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      background-color: #333;
+      margin: 2% 0;
+  }
+  /* Responsive yapı için alınan kaynak: https://www.youtube.com/watch?v=eOG90Q8EfRo*/
+  
+  .mainFooter p {
+      width: 92%;
+      margin: 10px auto;
+      color: #FFF;
+  }
+  
+  .mainFooter a {
+      color: white;
+  }
+  /*İletişim ile ilgili css*/
+  /*Responsive form için kaynak https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_form*/
+  
+  .contact {
+      border-radius: 5px;
+      background-color: white;
+      padding: 20px;
+      margin-top: 2%;
+  }
+  /*Responsive form için kaynak https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_form*/
+  
+  .col1 {
+      float: left;
+      width: 25%;
+      margin-top: 5px;
+  }
+  /*Responsive form için kaynak https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_form*/
+  
+  .col3 {
+      float: left;
+      width: 75%;
+      margin-top: 5px;
+  }
+  /*Responsive form için kaynak https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_form*/
+  
+  input[type=text],
+  input[type=email],
+  input[type=tel],
+  input[type=date],
+  select,
+  textarea {
+      width: 100%;
+      border-radius: 5px;
+      padding: 14px;
+      border: 1px;
+      border-style: solid;
+      border-color: #999;
+  }
+  /*Responsive form için kaynak https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_form*/
+  
+  label {
+      padding: 7px;
+      display: inline-block;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  /*Responsive form için kaynak https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_form*/
+  
+  input[type=submit] {
+      float: right;
+      border-radius: 5px;
+      background-color: #ef0b2e;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      margin-top: 5px;
+  }
+  /*Responsive form için kaynak https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_form*/
+  
+  input[type=submit]:hover {
+      background-color: #ef0b2e;
+  }
+  /*Responsive form için kaynak https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_form*/
+  
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+  
+  .anasayfah2 {
+      border-bottom-style: solid;
+      border-width: 2px;
+  }
+  /*yukarı tuşu kaynak: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp*/
+  
+  #yukarıButon {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #ef0b2e;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+  }
+  /*yukarı tuşu kaynak: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp*/
+  
+  #yukarıButon:hover {
+      background-color: #555;
+  }
+  /* Responsive yapı için alınan kaynak: https://www.youtube.com/watch?v=eOG90Q8EfRo*/
+  
+  @media screen and ( min-width: 150px) and ( max-width: 800px) {
+      .body {
+          width: 90%;
+          font-size: 95%;
+      }
+      /* Responsive yapı için alınan kaynak: https://www.youtube.com/watch?v=eOG90Q8EfRo*/
+      .mainHeader img {
+          width: 100%;
+      }
+      /* Responsive yapı için alınan kaynak: https://www.youtube.com/watch?v=eOG90Q8EfRo*/
+      .content {
+          width: 100%;
+          float: left;
+          margin-top: 2%;
+      }
+      /* Responsive yapı için alınan kaynak: https://www.youtube.com/watch?v=eOG90Q8EfRo*/
+      .post-info {
+          display: none;
+      }
+      /* Responsive yapı için alınan kaynak: https://www.youtube.com/watch?v=eOG90Q8EfRo*/
+      .topcontent {
+          background-color: #FFF;
+          border-radius: 5px;
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          padding: 3% 5%;
+          margin-top: 2%;
+          margin-bottom: 4%;
+      }
+      /* Responsive yapı için alınan kaynak: https://www.youtube.com/watch?v=eOG90Q8EfRo*/
+      .bottomcontent {
+          margin-top: 3%;
+      }
+      /* Responsive yapı için alınan kaynak: https://www.youtube.com/watch?v=eOG90Q8EfRo*/
+      .top-sidebar {
+          width: 94%;
+          margin: 2% 0 2% 0;
+          padding: 2% 3%;
+      }
+      /* Responsive yapı için alınan kaynak: https://www.youtube.com/watch?v=eOG90Q8EfRo*/
+      .middle-sidebar {
+          width: 94%;
+          margin: 2% 0 2% 0;
+          padding: 2% 3%;
+      }
+      /* Responsive yapı için alınan kaynak: https://www.youtube.com/watch?v=eOG90Q8EfRo*/
+      .bottom-sidebar {
+          width: 94%;
+          margin: 2% 0 2% 0;
+          padding: 2% 3%;
+      }
+      /* Responsive yapı için alınan kaynak: https://www.youtube.com/watch?v=eOG90Q8EfRo*/
+      .mainFooter {
+          height: 100px;
+      }
+      /* Responsive yapı için alınan kaynak: https://www.youtube.com/watch?v=eOG90Q8EfRo*/
+      .resim {
+          width: 100%;
+      }
+      /* Responsive yapı için alınan kaynak: https://www.youtube.com/watch?v=eOG90Q8EfRo*/
+      .kitapresim {
+          width: 50%;
+      }
+      /*Responsive video için kaynak: https://www.w3schools.com/css/css_rwd_videos.asp*/
+      video {
+          width: 100%;
+          height: auto;
+      }
+      a {
+          word-wrap: break-word;
+      }
+  }
+  /*Menü kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
+  
+  @media screen and (max-width: 1200px) {
+      .nav a:not(:first-child),
+      .dropdown-menu .dropdownbutton {
+          display: none;
+      }
+      .nav a.icon {
+          float: right;
+          display: block;
+          color: white;
+      }
+  }
+  /*Menü kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
+  
+  @media screen and (max-width: 1200px) {
+      .nav.responsive {
+          position: relative;
+      }
+      .nav.responsive .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+      }
+      .nav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+      }
+      .nav.responsive .dropdown-menu {
+          float: none;
+      }
+      .nav.responsive .dropdown-links {
+          position: relative;
+      }
+      .nav.responsive .dropdown-menu .dropdownbutton {
+          display: block;
+          width: 100%;
+          text-align: left;
+      }
+      /*Responsive form için kaynak https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_form*/
+      .col1,
+      .col3,
+      input[type=submit],
+      input[type=email] {
+          width: 100%;
+          margin-top: 0;
+      }
+  }
+  
+  @media screen and ( min-width: 800px) and ( max-width: 1400px) {
+      video {
+          width: 100%;
+          height: auto;
+      }
+      .topcontent {
+          background-color: #FFF;
+          border-radius: 5px;
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          padding: 3% 5%;
+          margin-top: 2%;
+          height: 40%;
+      }
+  }

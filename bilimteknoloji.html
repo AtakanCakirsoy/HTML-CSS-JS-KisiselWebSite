@@ -1,0 +1,149 @@
+<!--Responsive yapı için alınan kaynak https://www.youtube.com/watch?v=eOG90Q8EfRo-->
+<html>
+
+<head>
+    <title>Atakan Çakırsoy - Kişisel Sayfam</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Dropdown menü için icon; kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+    <!--Menüde iconları kullanabilmek için eklenen kütüphane-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .bilimteknoloji-content {
+            background-color: #FFF;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            padding: 3% 5%;
+            margin-top: 2%;
+        }
+        
+        .bilimteknoloji-main-content {
+            width: 100%;
+            float: left;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <!-- yukarı tuşu kaynak: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
+    <button onclick="topFunction()" id="yukarıButon">Yukarı</button>
+    <!--Responsive yapı için alınan kaynak https://www.youtube.com/watch?v=eOG90Q8EfRo-->
+    <header class="mainHeader">
+        <!--Logo için kaynak: https://logomakr.com/-->
+        <img src="img/logo.png" />
+        <!--DropDown menü kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp-->
+        <!--İconlar için kaynak: https://fontawesome.com/v4.7.0/icons/-->
+        <div class="nav" id="navid">
+            <a href="index.html">
+                <i class="fa fa-home"></i>
+                <span>Anasayfa</span>
+            </a>
+            <a href="hakkimda.html" target="_blank">
+                <i class="fa fa-info-circle"></i>
+                <span>Hakkımda</span>
+            </a>
+            <a href="bilimteknoloji.html">
+                <i class="fa fa-desktop"></i>
+                <span>Bilim&Teknoloji</span>
+            </a>
+            <a href="kutuphanem.html">
+                <i class="fa fa-book"></i>
+                <span>Kütüphanem</span>
+            </a>
+            <div class="dropdown-menu">
+                <button class="dropdownbutton">Çalışmalarım
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                <div class="dropdown-links">
+                    <a href="aspnetmvc.html" target="_blank">ASP.NET MVC</a>
+                    <a href="reactnative.html" target="_blank">React Native</a>
+                    <a href="ionic.html" target="_blank">Ionic</a>
+                </div>
+            </div>
+            <a href="iletisim.html">
+                <i class="fa fa-paper-plane-o"></i>
+                <span>İletişim</span>
+            </a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="forDropdown()">&#9776;</a>
+        </div>
+    </header>
+    <!--Responsive yapı için alınan kaynak https://www.youtube.com/watch?v=eOG90Q8EfRo-->
+    <div class="mainContent">
+        <div class="bilimteknoloji-main-content">
+            <article class="bilimteknoloji-content">
+                <header>
+                    <h2>Uçan Taksi Dönemi Başlıyor! İlk deneme uçuşu Singapur’da gerçekleştirildi.</h2>
+                </header>
+                <center><img src="img/ucantaksi.jpg" width="50%" alt="Uçan Taksi" class="resim" /></center>
+                <footer>
+                    <p class="post-info">Bu gönderi Atakan tarafından yazılmıştır.</p>
+                </footer>
+                <content>
+                    <p>Kendine kendine uçması için tasarlanan 18 pervaneli hava taksi, şehir merkezindeki ilk deneme uçuşunu Singapur’da gerçekleştirdi. Asya’da 2-5 yıl içinde pilotsuz uçan taksi seferlerine başlaması bekleniyor.
+                    </p>
+                    <p>Bugün bataryalarını doldurup 18 pervanesini döndürerek Singapur’da havalanan ve Marina Koyu üzerinde 2.5 dakika uçan taksi, birkaç yıl içinde ulaşımda devrim yapacağı iddiasıyla dünyaya tanıtıldı.
+                    </p>
+                    <p><a href="ucantaksi.html">Devamı için tıklayınız...</a></p>
+                </content>
+            </article>
+            <article class="bottomcontent">
+                <header>
+                    <h2>Bilim İnsanları, Bilimsel Amaçlar İçin Farelere Araba Kullanmayı Öğretti!</h2>
+                </header>
+                <footer>
+                    <p class="post-info">Bu gönderi Atakan tarafından yazılmıştır.</p>
+                </footer>
+                <content>
+                    <p>Bilim insanları, Bilimsel Amaçlar İçin Farelere Mini Arabaları Nasıl Kullanacaklarını Öğrettiler.
+                    </p>
+                    <center>
+                        <p><video controls>
+                            <source src="video/bilimselamacfare.mp4" type="video/mp4">
+                        </video></center>
+                    </p>
+                    <p><a href="bilimselamac.html">Devamı için tıklayınız...</a></p>
+                </content>
+            </article>
+        </div>
+    </div>
+    <footer class="mainFooter">
+        <center>
+            <p>Copyright 2019 &copy; Atakan Çakırsoy</p>
+            <p>İletişim Bilgileri: <a href="mailto:atakancakirsoyy@gmail.com">atakancakirsoyy@gmail.com</a></p>
+        </center>
+    </footer>
+    <script>
+        //DropDown menü kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp
+        function forDropdown() {
+            var x = document.getElementById("navid");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+        //yukarı tuşu kaynak: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+        var mybutton = document.getElementById("yukarıButon");
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+        //yukarı tuşu kaynak: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        //yukarı tuşu kaynak: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

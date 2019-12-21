@@ -1,0 +1,155 @@
+<!--Responsive yapı için alınan kaynak https://www.youtube.com/watch?v=eOG90Q8EfRo-->
+<html>
+
+<head>
+    <title>Atakan Çakırsoy - Kişisel Sayfam</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Dropdown menü için icon; kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+    <!--Menüde iconları kullanabilmek için eklenen kütüphane-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .bilimteknoloji-content {
+            background-color: #FFF;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            padding: 3% 5%;
+            margin-top: 2%;
+        }
+        
+        .bilimteknoloji-main-content {
+            width: 100%;
+            float: left;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <!-- yukarı tuşu kaynak: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
+    <button onclick="topFunction()" id="yukarıButon">Yukarı</button>
+    <!--Responsive yapı için alınan kaynak https://www.youtube.com/watch?v=eOG90Q8EfRo-->
+    <header class="mainHeader">
+        <!--Logo için kaynak: https://logomakr.com/-->
+        <img src="img/logo.png" />
+        <!--DropDown menü kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp-->
+        <!--İconlar için kaynak: https://fontawesome.com/v4.7.0/icons/-->
+        <div class="nav" id="navid">
+            <a href="index.html">
+                <i class="fa fa-home"></i>
+                <span>Anasayfa</span>
+            </a>
+            <a href="hakkimda.html" target="_blank">
+                <i class="fa fa-info-circle"></i>
+                <span>Hakkımda</span>
+            </a>
+            <a href="bilimteknoloji.html">
+                <i class="fa fa-desktop"></i>
+                <span>Bilim&Teknoloji</span>
+            </a>
+            <a href="kutuphanem.html">
+                <i class="fa fa-book"></i>
+                <span>Kütüphanem</span>
+            </a>
+            <div class="dropdown-menu">
+                <button class="dropdownbutton">Çalışmalarım
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                <div class="dropdown-links">
+                    <a href="aspnetmvc.html" target="_blank">ASP.NET MVC</a>
+                    <a href="reactnative.html" target="_blank">React Native</a>
+                    <a href="ionic.html" target="_blank">Ionic</a>
+                </div>
+            </div>
+            <a href="iletisim.html">
+                <i class="fa fa-paper-plane-o"></i>
+                <span>İletişim</span>
+            </a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="forDropdown()">&#9776;</a>
+        </div>
+    </header>
+    <!--Responsive yapı için alınan kaynak https://www.youtube.com/watch?v=eOG90Q8EfRo-->
+    <div class="mainContent">
+        <div class="bilimteknoloji-main-content">
+            <article class="bilimteknoloji-content">
+                <header>
+                    <h2>Bilim İnsanları, Bilimsel Amaçlar İçin Farelere Araba Kullanmayı Öğretti!</h2>
+                </header>
+                <footer>
+                    <p class="post-info">Bu gönderi Atakan tarafından yazılmıştır.</p>
+                </footer>
+                <content>
+                    <p>Bilim insanları, Bilimsel Amaçlar İçin Farelere Mini Arabaları Nasıl Kullanacaklarını Öğrettiler.
+                    </p>
+                    <p>Richmond Üniversitesinde bulunan bir laboratuvardaki fareler, pek çok Amerikalı ‘nın her gün uğraştığı bir şeyi yapmayı öğrendi; başarılı bir şekilde araba sürerek kendi yiyeceklerini temin etmek.
+                    </p>
+                    <p>Bu tüylü sürücülere özel yapım bir araba yapılarak farelere bunu nasıl sürecekleri öğretilmiş ve sonucunda elde edilen bulgular sayesinde farelerin düşünülenden daha fazla görevi öğrenme yeteneğine sahip olabileceğini anlaşılmıştır.</p>
+                    <p>İlk olarak NewScientist tarafından duyurulan bu deney, Richmond Üniversitesi’nden Nörolog Kelly Lambert’ın parlak fikriydi.</p>
+                    <p>Lambert ve meslektaşları boş bir yiyecek kabından mini bir araba yapıp iç kısmını alüminyum çubuklarla teknolojik olarak uygun olabilmesi için donatmış ve direksiyonu için deüç bakır çubuk kullanarak yapısını güçlendirmiştir.</p>
+                    <p>Bakır çubuktan direksiyon simidi ve alüminyum zemin, aracı ileriye itebilecek elektrik akımı oluşturacak şekilde yerleştirilmiştir. Fareler, uygun bir şekilde eğitildiğinde ise minik pençeleriyle sol, orta veya sağ bakır çubuğu kavrayarak
+                        arabanın yönünü kontrol edebilmektedirler.</p>
+                    <center><img src="img/fare.jpg" width="50%" alt="Bilimsel Amaç Fare Deneyi" class="resim" /></center>
+                    <h2>Farelere Sürüş Yapabilmeleri İçin Verilen Eğitim Yöntemi</h2>
+                    <p>Bilim insanları, fareleri, her plastik arabaya dokundukları ve onu hareket ettikleri zaman sürekli olarak Froot Loops (Kellogg’s tarafından üretilen ve satılan bir tatlandırılmış, meyve aromalı şişmiş mısır ve kahvaltılık gevrek markasıdır.</p>
+                    <p>Tahıl parçaları halka şeklindedir ve çeşitli parlak renklere ve meyve aromaları karışımına sahiptir.) ile ödüllendirerek eğitim vermişlerdir.</p>
+                    <p>Zamanla bilim insanı bu eğitimi bir adım daha ileriye taşımış ve farelerin etrafında sürüş yapabileceği 4 metrekarelik dikdörtgen biçimli bir kutu hazırlamıştır. Ekip, FrootLoops’ları aşama aşama daha da uzağa yerleştirerek fareleri,
+                        sürüşlerinde daha ince ayarlamayapmaları için teşvik etmiştir.</p>
+                    <p>Deneydeki 11 erkek ve 6 dişi farenin hepsi aynı şekilde öğrenmemiştir. Lambert, bulundukları ortamın farelerin öğreniş biçimlerini etkilendiğini söylemiştir. Karmaşık, uyarıcı yapıya bir ortamda yaşayan fareler, kasvetli, sıkıcı laboratuvar
+                        ortamlarında yaşayanlardan çok daha hızlı bir şekilde araba sürmeyi öğrenmiştir.</p>
+                    <h2>Tıpkı İnsanlar Gibi Öğrenimden Memnun Oldular</h2>
+                    <p>Ayrıca sürüş eyleminin fareleri rahatlatmış gibi göründüğünü de söyleyen Lambert, tıpkı insanlar gibi zorlu bir işte ustalık kazanmalarından dolayı memnun olduklarını da belirtmiştir. Ancak unutmamak gerekir ki, insanların aksine,
+                        fareler trafik sorunsalı ile uğraşmamaktadır.</p>
+                    <p>Çok yakında şehir sokaklarında araba süren fareler görme ihtimalimizin olmamasına rağmen Lambert ve diğer bilim insanları bu deneyin oldukça önemli olduğunu söylemişlerdir.</p>
+                    <p>Çünkü farelerin nöroplastisitesinin yani beynin yeni görevleri kendine göre uyarlama ve öğrenme yeteneğinin, bir zamanlar düşünüldüğünden çok daha büyük bir kapasiteye sahip olabileceğini öne sürmektedirler.</p>
+                    <p>Sürüş testi sadece bir başlangıç. Lambert, testlerin daha karmaşık hale getirilebileceğine inandığını ve fareleri gözlemlemek için toplanan verilerin Parkinson hastalığı ve depresyonun etkilerini araştırmaya yardımcı olması için kullanılabileceğini
+                        söylemiştir.
+                    </p>
+                    <center>
+                        <p><video controls class="video">
+                            <source src="video/bilimselamacfare.mp4" type="video/mp4" >
+                        </video></center>
+                    <p>Kaynak: <a href="https://beyinsizler.net/bilim-insanlari-bilimsel-amaclar-icin-farelere-araba-kullanmayi-ogretti/" target="_blank">https://beyinsizler.net/bilim-insanlari-bilimsel-amaclar-icin-farelere-araba-kullanmayi-ogretti/</a></p>
+                </content>
+            </article>
+        </div>
+    </div>
+    <footer class="mainFooter">
+        <center>
+            <p>Copyright 2019 &copy; Atakan Çakırsoy</p>
+            <p>İletişim Bilgileri: <a href="mailto:atakancakirsoyy@gmail.com">atakancakirsoyy@gmail.com</a></p>
+        </center>
+    </footer>
+    <script>
+        //DropDown menü kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp
+        function forDropdown() {
+            var x = document.getElementById("navid");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+        //yukarı tuşu kaynak: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+        var mybutton = document.getElementById("yukarıButon");
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+        //yukarı tuşu kaynak: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        //yukarı tuşu kaynak: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

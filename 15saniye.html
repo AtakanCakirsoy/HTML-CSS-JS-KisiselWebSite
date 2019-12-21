@@ -1,0 +1,144 @@
+<!--Responsive yapı için alınan kaynak https://www.youtube.com/watch?v=eOG90Q8EfRo-->
+<html>
+
+<head>
+    <title>Atakan Çakırsoy - Kişisel Sayfam</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Dropdown menü için icon; kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+    <!--Menüde iconları kullanabilmek için eklenen kütüphane-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .kutuphanem-content {
+            background-color: #FFF;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            padding: 3% 5%;
+            margin-top: 2%;
+        }
+        
+        .kutuphanem-main-content {
+            width: 100%;
+            float: left;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <!-- yukarı tuşu kaynak: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
+    <button onclick="topFunction()" id="yukarıButon">Yukarı</button>
+    <!--Responsive yapı için alınan kaynak https://www.youtube.com/watch?v=eOG90Q8EfRo-->
+    <header class="mainHeader">
+        <!--Logo için kaynak: https://logomakr.com/-->
+        <img src="img/logo.png" />
+        <!--DropDown menü kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp-->
+        <!--İconlar için kaynak: https://fontawesome.com/v4.7.0/icons/-->
+        <div class="nav" id="navid">
+            <a href="index.html">
+                <i class="fa fa-home"></i>
+                <span>Anasayfa</span>
+            </a>
+            <a href="hakkimda.html" target="_blank">
+                <i class="fa fa-info-circle"></i>
+                <span>Hakkımda</span>
+            </a>
+            <a href="bilimteknoloji.html">
+                <i class="fa fa-desktop"></i>
+                <span>Bilim&Teknoloji</span>
+            </a>
+            <a href="kutuphanem.html">
+                <i class="fa fa-book"></i>
+                <span>Kütüphanem</span>
+            </a>
+            <div class="dropdown-menu">
+                <button class="dropdownbutton">Çalışmalarım
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                <div class="dropdown-links">
+                    <a href="aspnetmvc.html" target="_blank">ASP.NET MVC</a>
+                    <a href="reactnative.html" target="_blank">React Native</a>
+                    <a href="ionic.html" target="_blank">Ionic</a>
+                </div>
+            </div>
+            <a href="iletisim.html">
+                <i class="fa fa-paper-plane-o"></i>
+                <span>İletişim</span>
+            </a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="forDropdown()">&#9776;</a>
+        </div>
+    </header>
+    <!--Responsive yapı için alınan kaynak https://www.youtube.com/watch?v=eOG90Q8EfRo-->
+    <div class="mainContent">
+        <div class="kutuphanem-main-content">
+            <article class="kutuphanem-content">
+                <center><img src="img/15saniye.jpg" width="20%" alt="Öksüzler Treni" class="kitapresim" /></center>
+                <center><b><p>Orijinal İsim: 15 Seconds</p>
+                <p>Yazar: Andrew Gross</p>
+                <p>Çevirmen: Yaldız Çelik</p>
+                <p>Yayınevi: Arkadya Yayınları</p>
+                <p>Sayfa: 440</p>
+                <p>Baskı Yılı: 2014</p></b></center>
+                <header>
+                    <h2>15 Saniye</h2>
+                </header>
+                <footer>
+                    <p class="post-info">Bu gönderi Atakan tarafından yazılmıştır.</p>
+                </footer>
+                <content>
+                    <!--Yazının kaynağı: https://adreamreader.blogspot.com/2015/03/15-saniye-andrew-gross.html-->
+                    <p>Henry Steadman, mesleğinde gayet başarılı bir plastik cerrahtır. Sahip olduğu klinik zinciri sayesinde muazzam bir servete, hatırı sayılır bir şöhrete ve rahat bir yaşama sahiptir. Konuşmacı olarak davetli olduğu bir konferans için
+                        şehirden ayrılan Henry, uçaktan iner inmez kendisine bir araç kiralar ve konferanstan önce golf oynamak için sözleştiği eski dostu Mike ile buluşmak üzere yola çıkar. Ancak saçma bir nedenle polis tarafından önü kesilir ve Henry'nin
+                        bir türlü anlam veremediği olaylar da böylece başlamış olur. Bazı kuralları ihlal ettiği gerekçesiyle ceza kesen polis, o sırada yoldan geçen bir araçtan açılan ateş sonucu vurulur. Henry, yardım etmek için polis aracına gider
+                        ancak polis ölmüştür ve elinde Henry'ye kesilen ceza makbuzu bulunmaktadır. Bir anda cinayetle suçlanabileceğini fark eden Henry, hemen oradan uzaklaşır. Ancak ateş açılan arabayı kimse görmezken, Henry'nin ölü bir polisin bulunduğu
+                        araçtan uzaklaştığına pek çok kişi şahit olmuştur.
+                    </p>
+                    <p>Henry, yardım istemek için Mike 'a gider ancak Mike da öldürülmüştür. Saniyeler içinde tüm hayatı alt üst olan ve tam bir çıkmaza giren Henry, artık aranan bir katil zanlısıdır. Bu sırada Henry, tanımadığı bir adamdan telefon alır.
+                        Telefondaki ses, Henry'nin canından çok sevdiği kızının elinde olduğunu ve eğer yakalanırsa ya da kızının kaçırıldığı haberi duyulursa, kızını öldüreceğini söylemektedir. Henry 'nin artık yapacabileceği tek şey; doğru ipuçları
+                        üzerinde ilerleyip bir an önce kızını bu psikopattan kurtarmaktır.
+                    </p>
+                    <p>Polisiye ve gerilim türünden hoşlananlar için fazlasıyla tatmin edici bir kurgusu var. Bol aksiyonlu bir film tadı bırakıyor damakta. Tavsiye ederim. Keyifli okumalar. </p>
+                </content>
+            </article>
+        </div>
+    </div>
+    <footer class="mainFooter">
+        <center>
+            <p>Copyright 2019 &copy; Atakan Çakırsoy</p>
+            <p>İletişim Bilgileri: <a href="mailto:atakancakirsoyy@gmail.com">atakancakirsoyy@gmail.com</a></p>
+        </center>
+    </footer>
+    <script>
+        //DropDown menü kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp
+        function forDropdown() {
+            var x = document.getElementById("navid");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+        //yukarı tuşu kaynak: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+        var mybutton = document.getElementById("yukarıButon");
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+        //yukarı tuşu kaynak: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        //yukarı tuşu kaynak: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

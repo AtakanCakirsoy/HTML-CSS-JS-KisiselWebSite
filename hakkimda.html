@@ -1,0 +1,287 @@
+<!--Responsive yapı için alınan kaynak https://www.youtube.com/watch?v=eOG90Q8EfRo-->
+<html>
+
+<head>
+    <title>Atakan Çakırsoy - Kişisel Sayfam</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Dropdown menü için icon; kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+    <!--Menüde iconları kullanabilmek için eklenen kütüphane-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .hakkimda-content {
+            background-color: #FFF;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            padding: 3% 5%;
+            margin-top: 2%;
+        }
+        
+        .hakkimda-main-content {
+            width: 100%;
+            float: left;
+        }
+        
+        #button {
+            margin-top: 5%;
+        }
+        
+        input[type=button] {
+            float: right;
+            border-radius: 5px;
+            background-color: #ef0b2e;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            margin-top: 5px;
+        }
+        
+        input[type=button]:hover {
+            background-color: #ef0b2e;
+        }
+        
+        @media screen and (max-width: 800px) {
+            #button {
+                margin-top: 10%;
+            }
+        }
+    </style>
+    <!--Editlemek için kaynak kod: https://makitweb.com/how-to-make-editable-div-element-with-contenteditable-attribute/-->
+    <!--PDF İçin alınan kaynak: https://www.youtube.com/watch?v=_EqYMNdbrsc-->
+    <script>
+        function addRemoveAttr() {
+            var contenteditable = document.getElementById('HTMLtoPDF').contentEditable;
+            var divs = document.getElementsByTagName("div");
+            if (contenteditable == 'inherit' || contenteditable == 'false') {
+                alert("Düzenleme Aktif.(Türkçe Karakter Kullanmayınız!)")
+                document.getElementById('HTMLtoPDF').contentEditable = true;
+                contenteditable.forEach(el => {
+                    el.addEventListener("blur", () => {
+                        localStorage.setItem("dataStorage-" + el.id, el.innerHTML);
+                    })
+                });
+                for (var key in localStorage) {
+                    if (key.includes("dataStorage-")) {
+                        const id = key.replace("dataStorage-", "");
+                        document.querySelector("#" + id).innerHTML = localStorage.getItem(key);
+                    }
+                }
+
+            } else {
+                document.getElementById('HTMLtoPDF').contentEditable = false;
+                alert("Düzenleme kapatıldı.")
+            }
+        }
+    </script>
+</head>
+
+<body class="body">
+    <!-- yukarı tuşu kaynak: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
+    <button onclick="topFunction()" id="yukarıButon">Yukarı</button>
+    <!--Responsive yapı için alınan kaynak https://www.youtube.com/watch?v=eOG90Q8EfRo-->
+    <header class="mainHeader">
+        <!--Logo için kaynak: https://logomakr.com/-->
+        <img src="img/logo.png" />
+        <!--DropDown menü kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp-->
+        <!--İconlar için kaynak: https://fontawesome.com/v4.7.0/icons/-->
+        <div class="nav" id="navid">
+            <a href="index.html">
+                <i class="fa fa-home"></i>
+                <span>Anasayfa</span>
+            </a>
+            <a href="hakkimda.html" target="_blank">
+                <i class="fa fa-info-circle"></i>
+                <span>Hakkımda</span>
+            </a>
+            <a href="bilimteknoloji.html">
+                <i class="fa fa-desktop"></i>
+                <span>Bilim&Teknoloji</span>
+            </a>
+            <a href="kutuphanem.html">
+                <i class="fa fa-book"></i>
+                <span>Kütüphanem</span>
+            </a>
+            <div class="dropdown-menu">
+                <button class="dropdownbutton">Çalışmalarım
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                <div class="dropdown-links">
+                    <a href="aspnetmvc.html" target="_blank">ASP.NET MVC</a>
+                    <a href="reactnative.html" target="_blank">React Native</a>
+                    <a href="ionic.html" target="_blank">Ionic</a>
+                </div>
+            </div>
+            <a href="iletisim.html">
+                <i class="fa fa-paper-plane-o"></i>
+                <span>İletişim</span>
+            </a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="forDropdown()">&#9776;</a>
+        </div>
+    </header>
+    <!--Responsive yapı için alınan kaynak https://www.youtube.com/watch?v=eOG90Q8EfRo-->
+    <div class="mainContent">
+        <div class="hakkimda-main-content">
+            <article class="hakkimda-content">
+                <content>
+                    <div id="HTMLtoPDF">
+                        <em><h2 style="border-bottom:solid; border-bottom-width: 2px;">Kisisel Bilgiler</h2></em>
+                        <div class="row" style="clear: both;">
+                            <div class="col1">
+                                <label><b>Adi Soyadi:</b></label>
+                            </div>
+                            <div class="col3">
+                                Atakan Çakirsoy
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col1">
+                                <label><b>Dogum Yeri ve Tarihi:</b></label>
+                            </div>
+                            <div class="col3">
+                                Istanbul, 12.03.1996
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col1">
+                                <label><b>Ev Adresi:</b></label>
+                            </div>
+                            <div class="col3">
+                                Velibaba Mah. Cebir Sok. No:6 D:14 K:4 Pendik/Istanbul
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col1">
+                                <label><b>E-mail:</b></label>
+                            </div>
+                            <div class="col3">
+                                atakancakirsoyy@gmail.com
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col1">
+                                <label><b>Telefon:</b></label>
+                            </div>
+                            <div class="col3">
+                                0539 618 10 21
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col1">
+                                <label><b>Web Sitesi(Varsa):</b></label>
+                            </div>
+                            <div class="col3">
+                                www.atakancakirsoy.tk
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col1">
+                                <label><b>Ehliyet(Varsa):</b></label>
+                            </div>
+                            <div class="col3">
+                                B Sinifi(2015)
+                            </div>
+                        </div>
+                        <em><h2 style="border-bottom:solid; border-bottom-width: 2px;">Egitim</h2></em>
+                        <div class="row">
+                            Pendik Turk Telekom Sehit Murat Mertel Mesleki ve Teknik Anadolu Lisesi(2014)
+                        </div>
+                        <div class="row">
+                            Kocaeli Universitesi Bilisim Sistemleri Mühendisligi(2021)</br>
+                        </div>
+                        <em><h2 style="border-bottom:solid; border-bottom-width: 2px;">Is Tecrubesi</h2></em>
+                        <div class="row">
+                            NOVA Reklamcilik Dekorasyon A.S / Bilgi Teknolojileri(Stajyer/2013)
+                        </div>
+                        <div class="row">
+                            Jubatus Bilisim ve Egitim Hiz. Tic. Ltd. Sti / Bilgi-Islem(Stajyer/2019)
+                        </div>
+                        <em><h2 style="border-bottom:solid; border-bottom-width: 2px;">Sertifikalar</h2></em>
+                        <div class="row">
+                            Aldiginiz sertifikalari yaziniz, eger bir sertifikaya sahip degilseniz bos birakabilirsiniz.
+                        </div>
+                        <em><h2 style="border-bottom:solid; border-bottom-width: 2px;">Bilgisayar Bilgisi</h2></em>
+                        <div class="row">
+                            Office Programlari &emsp; (Orta Seviye)</div>
+                        <div class="row">C# &emsp; (Orta Seviye)</div>
+                        <div class="row">Asp.net MVC &emsp; (Orta Seviye)</div>
+                        <div class="row">Entitity Framework
+                        </div>
+                        <div class="row">HTML &emsp; (Orta Seviye)
+                        </div>
+                        <div class="row">CSS &emsp; (Orta Seviye)
+                        </div>
+                        <div class="row">JS &emsp; (Orta Seviye)
+                        </div> MSSQL &emsp; (Orta Seviye)
+                        <div class="row">MySQL &emsp; (Orta Seviye)
+                        </div>
+                        <div class="row">React Native &emsp; (Orta Seviye)
+                        </div>
+                        <em><h2 style="border-bottom:solid; border-bottom-width: 2px;">Yabanci Dil Bilgisi</h2></em>
+                        <div class="row">
+                            Ingilizce: Okuma: Orta, Yazma: Orta, Konusma: Baslangiç
+                        </div>
+                        <em><h2 style="border-bottom:solid; border-bottom-width: 2px;">Ilgi Alanlari</h2></em>
+                        <div class="row">
+                            Kitap Okumak, Yuzmek, Gezmek, Bilgisayar Oyunlari, Yabanci Dizi Izlemek, Muzik Dinlemek
+                        </div>
+                        <em><h2 style="border-bottom:solid; border-bottom-width: 2px;">Diger</h2></em>
+                        <div class="row">
+                            Sigara Kullanmiyor
+                        </div>
+                        <div class="row" id="button">
+                            <!--Editlemek için kaynak kod: https://makitweb.com/how-to-make-editable-div-element-with-contenteditable-attribute/-->
+                            <input type='button' id='but_enable' value='Düzenle' onclick='addRemoveAttr();'>
+                            <!--PDF İçin alınan kaynak: https://www.youtube.com/watch?v=_EqYMNdbrsc-->
+                            <input type="button" value="PDF" onclick="HTMLtoPDF()" />
+                        </div>
+                    </div>
+                </content>
+            </article>
+
+        </div>
+    </div>
+    <footer class="mainFooter">
+        <center>
+            <p>Copyright 2019 &copy; Atakan Çakırsoy</p>
+            <p>İletişim Bilgileri: <a href="mailto:atakancakirsoyy@gmail.com">atakancakirsoyy@gmail.com</a></p>
+        </center>
+    </footer>
+    <script>
+        //DropDown menü kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp
+        function forDropdown() {
+            var x = document.getElementById("navid");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+        //yukarı tuşu kaynak: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+        var mybutton = document.getElementById("yukarıButon");
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+        //yukarı tuşu kaynak: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        //yukarı tuşu kaynak: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!--PDF İçin alınan kaynak: https://www.youtube.com/watch?v=_EqYMNdbrsc-->
+    <script src="forpdf/jspdf.js"></script>
+    <script src="forpdf/jquery-2.1.3.js"></script>
+    <script src="forpdf/pdfFromHTML.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!--Responsive yapı için alınan kaynak https://www.youtube.com/watch?v=eOG90Q8EfRo-->
+<html>
+
+<head>
+    <title>Atakan Çakırsoy - Kişisel Sayfam</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Dropdown menü için icon; kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+    <!--Menüde iconları kullanabilmek için eklenen kütüphane-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .bilimteknoloji-content {
+            background-color: #FFF;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            padding: 3% 5%;
+            margin-top: 2%;
+        }
+        
+        .bilimteknoloji-main-content {
+            width: 100%;
+            float: left;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <!-- yukarı tuşu kaynak: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
+    <button onclick="topFunction()" id="yukarıButon">Yukarı</button>
+    <!--Responsive yapı için alınan kaynak https://www.youtube.com/watch?v=eOG90Q8EfRo-->
+    <header class="mainHeader">
+        <!--Logo için kaynak: https://logomakr.com/-->
+        <img src="img/logo.png" />
+        <!--DropDown menü kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp-->
+        <!--İconlar için kaynak: https://fontawesome.com/v4.7.0/icons/-->
+        <div class="nav" id="navid">
+            <a href="index.html">
+                <i class="fa fa-home"></i>
+                <span>Anasayfa</span>
+            </a>
+            <a href="hakkimda.html" target="_blank">
+                <i class="fa fa-info-circle"></i>
+                <span>Hakkımda</span>
+            </a>
+            <a href="bilimteknoloji.html">
+                <i class="fa fa-desktop"></i>
+                <span>Bilim&Teknoloji</span>
+            </a>
+            <a href="kutuphanem.html">
+                <i class="fa fa-book"></i>
+                <span>Kütüphanem</span>
+            </a>
+            <div class="dropdown-menu">
+                <button class="dropdownbutton">Çalışmalarım
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                <div class="dropdown-links">
+                    <a href="aspnetmvc.html" target="_blank">ASP.NET MVC</a>
+                    <a href="reactnative.html" target="_blank">React Native</a>
+                    <a href="ionic.html" target="_blank">Ionic</a>
+                </div>
+            </div>
+            <a href="iletisim.html">
+                <i class="fa fa-paper-plane-o"></i>
+                <span>İletişim</span>
+            </a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="forDropdown()">&#9776;</a>
+        </div>
+    </header>
+    <!--Responsive yapı için alınan kaynak https://www.youtube.com/watch?v=eOG90Q8EfRo-->
+    <div class="mainContent">
+        <div class="bilimteknoloji-main-content">
+            <article class="bilimteknoloji-content">
+                <header>
+                    <h2>Uçan Taksi Dönemi Başlıyor! İlk deneme uçuşu Singapur’da gerçekleştirildi.</h2>
+                </header>
+                <footer>
+                    <p class="post-info">Bu gönderi Atakan tarafından yazılmıştır.</p>
+                </footer>
+                <content>
+                    <p>Kendine kendine uçması için tasarlanan 18 pervaneli hava taksi, şehir merkezindeki ilk deneme uçuşunu Singapur’da gerçekleştirdi. Asya’da 2-5 yıl içinde pilotsuz uçan taksi seferlerine başlaması bekleniyor.
+                    </p>
+                    <p>Bugün bataryalarını doldurup 18 pervanesini döndürerek Singapur’da havalanan ve Marina Koyu üzerinde 2.5 dakika uçan taksi, birkaç yıl içinde ulaşımda devrim yapacağı iddiasıyla dünyaya tanıtıldı.
+                    </p>
+                    <p>Almanya merkezli Volocopter şirketinin ürettiği uçan taksi, bagajla birlikte iki yolcu taşıyabiliyor. Şimdiki halde saatte en fazla 110 km hıza ulaşabiliyor.</p>
+                    <p>Büyük şehirlerde trafik sıkışıklığı ve çevre kirliliğini azaltma hedefiyle piyasaya sunulacak uçan taksi, ufak bir helikoptere benzese de insansız hava aracı (drone) teknolojisiyle çalışıyor.</p>
+                    <p>Pilotsuz olarak kendi kendine uçmak üzere tasarımlandı, ancak Singapur’un gökdelenlerinin önünden geçtiği bu ilk şehir merkezi turunda güvenlik gerekçesiyle pilotla birlikte havalandı.</p>
+                    <p>Volocopter daha önce Dubai, Helsinki, Almanya’nın bazı kentleri ve Las Vegas’da deneme uçuşu yapmıştı. Ama bu, bir şehrin en kalabalık merkezinin üzerinden ilk uçuşu oldu.</p>
+                    <p>2-5 yıl içinde ticari kullanıma girmesi beklenen Volocopter’in ilk sefer yapacağı yerlerden birinin de Asya’nın finans merkezi şehir-devleti Singapur olması, ardından trafik sıkışıklığıyla meşhur Asya metropollerine yayılması planlanıyor.</p>
+                    <center><img src="img/ucantaksi2.jpg" width="50%" alt="Uçan Taksi" class="resim" /></center>
+                    <h2>İŞ İNSANLARINA ‘BÜYÜK KOLAYLIK’</h2>
+                    <p>Volocopter CEO’su Florian Reuter, trafik altyapısı Batılı büyük şehirlerden daha planlı ve daha iyi olan Singapur’un ardından, şirket yöneticilerinin önemli bir toplantıya ya da uçağa yetişmek isterken trafik sıkışıklığı yüzünden saatlerce
+                        yolda kaldığı metropolleri hedef koydu.</p>
+                    <p>Reuter, pilotsuz uçan taksiyi çok büyük ihtiyacın hissedildiği Endonezya’nın başkenti Cakarta, Filipinler’in başkenti Manila, Tayland’ın başkenti Bangkok ve Asya’nın devleri Çin ile Hindistan’da devreye sokmak istediklerini söyledi.</p>
+                    <h2>ÇİN’DE SERİ ÜRETİM</h2>
+                    <p>Volocopter, Çin’de kendi hissedarları arasında da yer alan otomobil üreticisi Geely ile ortaklığa giderek Çin piyasası için uçan taksi seri üretimi yapmayı amaçlıyor.</p>
+                    <h2>SİNGAPUR’DA VOLOPORT TAMAM</h2>
+                    <p>Havası en kötü büyük şehirler küresel endeksinde 6. sırada yer aldığından, Volocopter pazarlamaya münasip Singapur’da deniz kenarında iniş-kalkış pistleri ve yolcu terminali olan uçan taksi istasyonu ‘VoloPort’un kurdelası haftabaşında
+                        kesildi bile.</p>
+                    <p>Volocopter’in partneri Skyports’un Genel Müdürü Duncan Walker, hava taksilerinin ulaştırmada diğer araçların ikamesi değil, başlı başına bir seçenek olacağını söyledi.</p>
+                    <p>Walker, “Biz bunun insanların şehirde nasıl seyahat ettiklerinin dinamiğini değiştireceğini düşünüyoruz” dedi.</p>
+                    <p>Kaynak: <a href="https://beyinsizler.net/ucan-taksi-donemi-basliyor-ilk-deneme-ucusu-singapurda-gerceklestirildi/" target="_blank">https://beyinsizler.net/ucan-taksi-donemi-basliyor-ilk-deneme-ucusu-singapurda-gerceklestirildi/</a></p>
+                </content>
+            </article>
+        </div>
+    </div>
+    <footer class="mainFooter">
+        <center>
+            <p>Copyright 2019 &copy; Atakan Çakırsoy</p>
+            <p>İletişim Bilgileri: <a href="mailto:atakancakirsoyy@gmail.com">atakancakirsoyy@gmail.com</a></p>
+        </center>
+    </footer>
+    <script>
+        //DropDown menü kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp
+        function forDropdown() {
+            var x = document.getElementById("navid");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+        //yukarı tuşu kaynak: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+        var mybutton = document.getElementById("yukarıButon");
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+        //yukarı tuşu kaynak: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        //yukarı tuşu kaynak: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

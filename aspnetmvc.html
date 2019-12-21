@@ -1,0 +1,162 @@
+<!--Responsive yapı için alınan kaynak https://www.youtube.com/watch?v=eOG90Q8EfRo-->
+<html>
+
+<head>
+    <title>Atakan Çakırsoy - Kişisel Sayfam</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Dropdown menü için icon; kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+    <!--Menüde iconları kullanabilmek için eklenen kütüphane-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .bilimteknoloji-content {
+            background-color: #FFF;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            padding: 3% 5%;
+            margin-top: 2%;
+        }
+        
+        .bilimteknoloji-main-content {
+            width: 100%;
+            float: left;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <!-- yukarı tuşu kaynak: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
+    <button onclick="topFunction()" id="yukarıButon">Yukarı</button>
+    <!--Responsive yapı için alınan kaynak https://www.youtube.com/watch?v=eOG90Q8EfRo-->
+    <header class="mainHeader">
+        <!--Logo için kaynak: https://logomakr.com/-->
+        <img src="img/logo.png" />
+        <!--DropDown menü kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp-->
+        <!--İconlar için kaynak: https://fontawesome.com/v4.7.0/icons/-->
+        <div class="nav" id="navid">
+            <a href="index.html">
+                <i class="fa fa-home"></i>
+                <span>Anasayfa</span>
+            </a>
+            <a href="hakkimda.html" target="_blank">
+                <i class="fa fa-info-circle"></i>
+                <span>Hakkımda</span>
+            </a>
+            <a href="bilimteknoloji.html">
+                <i class="fa fa-desktop"></i>
+                <span>Bilim&Teknoloji</span>
+            </a>
+            <a href="kutuphanem.html">
+                <i class="fa fa-book"></i>
+                <span>Kütüphanem</span>
+            </a>
+            <div class="dropdown-menu">
+                <button class="dropdownbutton">Çalışmalarım
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                <div class="dropdown-links">
+                    <a href="aspnetmvc.html" target="_blank">ASP.NET MVC</a>
+                    <a href="reactnative.html" target="_blank">React Native</a>
+                    <a href="ionic.html" target="_blank">Ionic</a>
+                </div>
+            </div>
+            <a href="iletisim.html">
+                <i class="fa fa-paper-plane-o"></i>
+                <span>İletişim</span>
+            </a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="forDropdown()">&#9776;</a>
+        </div>
+    </header>
+    <!--Responsive yapı için alınan kaynak https://www.youtube.com/watch?v=eOG90Q8EfRo-->
+    <div class="mainContent">
+        <div class="bilimteknoloji-main-content">
+            <article class="bilimteknoloji-content">
+                <header>
+                    <h2>ASP.NET MVC Mimarisi ile Test Sınavı Değerlendirme Otomasyon Programı</h2>
+                </header>
+                <footer>
+                    <p class="post-info">Bu gönderi Atakan tarafından yazılmıştır.</p>
+                </footer>
+                <content>
+                    <!--Yazının kaynağı: http://www.borakasmer.com/asp-net-mvc-nedir-ne-ise-yarar/-->
+                    <p>ASP.NET MVC Mimarisi kullanarak, test sınavı değerlendiren otomasyon programı geliştirdim. Öncelik MVC Nedir? Bunu açıklayalım.
+                    </p>
+                    <p>ASP.NET MVC, MVC pattern’ini ASP.NET’e eklemek için Microsoft’un geliştirdiği framework’tür. ASP.NET MVC’nin ne olduğunu anlamak için öncelikle MVC’nin ne olduğunu incelemekte fayda var.</p>
+                    <p>MVC, Model , View , Controller kelimelerinin baş harflerinden oluşur ve her kelime MVC’nin farklı bir katmanını ifade eder.</p>
+                    <center><img src="img/mvc.png" width="20%" alt="MVC" class="resim" /></center>
+                    <h3>Model</h3>
+                    <p>MVC dünyasında model uygulama verisinin veya durumunun saklandığı yerdir, genellikle veritabanı veya xml/json dosyası formatındadır. Model, veri katmanını (database, xml, json dosyası, vb.) uygulamadan izole eder, böylece diğer katmanlarda
+                        veri katmanının neresi olduğunun bilinmesine gerek kalmaz.</p>
+                    <p>Model katmanı sıklıkla Entity Framework, Nhibernate, LLBLGen, vb. gibi araçlar kullanılarak oluşturulur.</p>
+                    <h3>View</h3>
+                    <p>View, istemcinin gördüğü arayüzü içeren katmandır, genellikle Model katmanındaki verinin kullanılması ile oluşturulur. View katmanının Model ve Controller katmanlarından ayrılması ile arayüz değişikliklerinin uygulamanın diğer katmanlarını
+                        değiştirmeye gerek kalmadan yapılabilmesi sağlanmıştır.</p>
+                    <p>View katmanında HTML5 ve CSS3 gibi son versiyon teknolojiler kullanmak mümkündür. HTML5 ve CSS3 ile masaüstü ve mobil tarayıcılarda çalışabilen uygulamalar geliştirmek çok kolaylaşmıştır. Hatta Windows Store uygulamaları geliştirmek
+                        için HTML5 ve CSS3 teknolojilerinden yararlanılabilir.</p>
+                    <h3>Controller</h3>
+                    <p>Controller, istemciden gelen isteği işlemek, Model ve View katmanları arasında köprü olmak gibi görevleri yerine getirir. Controller içerisinde bir veya daha fazla Action olabilir, genellikle her Action bir web sayfası üretmek için
+                        kullanılır.
+                    </p>
+                    <h3>Program Nasıl Çalışıyor?</h3>
+                    <p>Şimdi de programımızın çalışma mantığından bahsedelim.Programda Admin ve Öğretim Görevlisi olmak üzere 2 farklı kullanıcı tipi bulunmakta.</p>
+                    <p>Admin olarak programa giriş yaptığımızda yapabileceğimiz işlemler şunlardır:</p>
+                    <p>-Admin veya Öğretim Görevlisi Eklemek, Silmek, Güncellemek</p>
+                    <p>-Fakülte Eklemek, Silmek, Güncellemek</p>
+                    <p>-Bölüm Eklemek, Silmek, Güncellemek</p>
+                    <p>-Ders Eklemek, Silmek, Güncellemek</p>
+                    <p>-Dönem Eklemek, Silmek, Güncellemek</p>
+                    <p>-Ders Atamak, Silmek, Güncellemek</p>
+                    <p>Öğretim Görevlisi olarak programa giriş yaptığımızda, Admin tarafından kendimize atanmış dersi seçerek, ilgili dersin sınavını okutabiliriz. Bu okutma işleminin sonuçlarını Excel'e aktarabiliriz.</p>
+                    <p><em>Not: İlgili program, üniversite sistemi için yapılmıştır.</em></p>
+                    <p>Programdan örnek görüntüler;</p>
+                    <center><img src="img/aspnetmvc1.PNG" width="80%" class="resim" />
+                        <img src="img/aspnetmvc2.PNG" width="80%" class="resim" />
+                        <img src="img/aspnetmvc3.PNG" width="80%" class="resim" />
+                        <img src="img/aspnetmvc4.PNG" width="80%" class="resim" /></center>
+                    <p>Aşağıdaki link sayesinde proje kodlarına ulaşabilirsiniz.</p>
+                    <p>Kaynak: <a href="https://github.com/mobge/OkulProje/tree/atakan" target="_blank">https://github.com/mobge/OkulProje/tree/atakan/</a></p>
+                </content>
+            </article>
+        </div>
+    </div>
+    <footer class="mainFooter">
+        <center>
+            <p>Copyright 2019 &copy; Atakan Çakırsoy</p>
+            <p>İletişim Bilgileri: <a href="mailto:atakancakirsoyy@gmail.com">atakancakirsoyy@gmail.com</a></p>
+        </center>
+    </footer>
+    <script>
+        //DropDown menü kaynak: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp
+        function forDropdown() {
+            var x = document.getElementById("navid");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+        //yukarı tuşu kaynak: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+        var mybutton = document.getElementById("yukarıButon");
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+        //yukarı tuşu kaynak: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        //yukarı tuşu kaynak: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>
