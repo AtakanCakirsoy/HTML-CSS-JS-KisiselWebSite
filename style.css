@@ -444,13 +444,4 @@
           width: 100%;
           height: auto;
       }
-      .topcontent {
-          background-color: #FFF;
-          border-radius: 5px;
-          -moz-border-radius: 5px;
-          -webkit-border-radius: 5px;
-          padding: 3% 5%;
-          margin-top: 2%;
-          height: 40%;
-      }
   }
